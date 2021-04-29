@@ -1,18 +1,17 @@
 import {AfterViewInit, Directive, ElementRef, Input} from '@angular/core';
 
 @Directive({
-  selector: '[appHighlight]'
+  selector: '[highLight]'
 })
 export class HighlightDirective implements AfterViewInit {
 
-  @Input() appHighlight: string;
+  @Input() highLight: string;
 
   constructor(private el: ElementRef) {
-    /*  el.nativeElement.style.backgroundColor = 'red';*/
   }
 
   ngAfterViewInit(): void {
-    this.el.nativeElement.style.backgroundColor = this.appHighlight;
+    this.el.nativeElement.style.backgroundColor = this.highLight;
   }
 
 
