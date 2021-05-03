@@ -13,6 +13,5 @@ export class CapitalizedInputDirective {
   onKeyup(value): void {
     console.log('Host Element Keyup', value);
     this.value = value.charAt(0).toUpperCase() + value.slice(1);
-    
   }
 }
