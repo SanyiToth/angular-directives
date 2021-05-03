@@ -1,7 +1,7 @@
 import {AfterViewInit, Directive, ElementRef, Input} from '@angular/core';
 
 @Directive({
-  selector: '[highLight]'
+  selector: '[HighLight]'
 })
 export class HighlightDirective implements AfterViewInit {
 
